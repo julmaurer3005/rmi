@@ -1,5 +1,6 @@
 import sys
 import os
+import io
 import json
 from flask import Flask, request, jsonify, render_template, send_file
 from main import gerar_relatorio
@@ -27,21 +28,15 @@ def generate():
         return jsonify({"error": "Data não fornecida"}), 400
         
     try:
-        nome_arquivo, total_sucesso = gerar_relatorio(data_input)
-        return jsonify({
-            "success": True, 
-            "message": f"Relatório gerado concluído! {total_sucesso} notícia(s) incluída(s).",
-            "file_url": f"/download/{os.path.basename(nome_arquivo)}"
-        })
+        buffer, nome_arquivo, total_sucesso = gerar_relatorio(data_input)
+        return send_file(
+            buffer,
+            as_attachment=True,
+            download_name=nome_arquivo,
+            mimetype='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+        )
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-@app.route('/download/<filename>')
-def download(filename):
-    file_path = os.path.join(OUTPUT_DIR, filename)
-    if os.path.exists(file_path):
-        return send_file(file_path, as_attachment=True)
-    return jsonify({"error": "Arquivo não encontrado."}), 404
 
 @app.route('/api/fontes', methods=['GET', 'POST'])
 def manage_fontes():

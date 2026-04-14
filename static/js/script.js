@@ -47,16 +47,32 @@ document.addEventListener("DOMContentLoaded", () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ date: dataVal })
             });
-            const result = await res.json();
-            
+
             loadingArea.classList.add('hidden');
             btnGerar.disabled = false;
 
             if (res.ok) {
-                resultMessage.innerText = result.message;
-                downloadLink.href = result.file_url;
+                // A API retorna o arquivo diretamente — fazemos o download via blob
+                const blob = await res.blob();
+                const contentDisposition = res.headers.get('Content-Disposition');
+                let filename = `Relatorio_Inteligencia_${dataVal.replace(/\//g, '-')}.docx`;
+                if (contentDisposition) {
+                    const match = contentDisposition.match(/filename="?([^"]+)"?/);
+                    if (match) filename = match[1];
+                }
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                window.URL.revokeObjectURL(url);
+
+                resultMessage.innerText = "Relatório gerado! O download iniciou automaticamente.";
                 resultArea.classList.remove('hidden');
             } else {
+                const result = await res.json();
                 alert("Erro: " + (result.error || "Falha na geração."));
             }
         } catch (error) {

@@ -1,5 +1,6 @@
 import os
 import gc
+import io
 import requests
 import feedparser
 import json
@@ -183,9 +184,8 @@ def gerar_relatorio(data_input):
             categoria = classificar(n["titulo"])
             relatorio[categoria].append(n)
 
-    # 3. Empacotamento / Output
-    print("\n[+] Agrupando e gerando o documento Word...")
-    os.makedirs("output", exist_ok=True)
+    # 3. Empacotamento / Output em Memória (sem gravar em disco)
+    print("\n[+] Agrupando e gerando o documento Word na memória...")
     
     doc = Document()
     doc.add_heading("RELATÓRIO DE MONITORAMENTO REGIONAL", 0)
@@ -206,14 +206,15 @@ def gerar_relatorio(data_input):
                 doc.add_paragraph(f"Acesso via: {limpar_texto_xml(n['link'])} (Fonte: {n['fonte']})")
                 doc.add_paragraph("")
 
-    # Gerando o arquivo final com timestamp para não sobrecrever arquivos passados
+    # Salva em memória (BytesIO) — sem tocar no disco
     timestamp_formatado = datetime.now().strftime("%Y-%m-%d_%H-%M")
-    nome_arquivo = f"output/Relatorio_Inteligencia_{timestamp_formatado}.docx"
-    doc.save(nome_arquivo)
+    nome_arquivo = f"Relatorio_Inteligencia_{timestamp_formatado}.docx"
+    buffer = io.BytesIO()
+    doc.save(buffer)
+    buffer.seek(0)
 
-    print(f"\n[OK] Finalizado! {total_sucesso} notícia(s) relevantes foram computadas e filtradas positivamente.")
-    print(f"     O seu Word foi salvo em: {nome_arquivo}\n")
-    return nome_arquivo, total_sucesso
+    print(f"\n[OK] Finalizado! {total_sucesso} notícia(s) relevantes foram geradas.")
+    return buffer, nome_arquivo, total_sucesso
 
 def main():
     print("="*40)
