@@ -1,4 +1,5 @@
 import os
+import gc
 import requests
 import feedparser
 import json
@@ -17,9 +18,9 @@ def classificar(texto):
     Classifica a notícia com base em palavras-chave no título/texto.
     """
     texto_lower = texto.lower()
-    if any(p in texto_lower for p in ["bombeiro", "incêndio", "socorristas", "obito", "óbito", "acidente", "atropelamento"]):
+    if any(p in texto_lower for p in ["bombeiro", "incêndio", "socorristas", "obito", "óbito", "acidente", "atropelamento", "socorro", "resgate","afogamento","afogada", "samu"]):
         return "CBMRS"
-    elif any(p in texto_lower for p in ["voluntário"]):
+    elif any(p in texto_lower for p in ["voluntário", "voluntários", "voluntersul"]):
         return "Bombeiros Voluntários"
     elif any(p in texto_lower for p in ["busca", "resgate", "afogamento", "desaparecido", "resgatado", "resgatada"]):
         return "Buscas/Salvamento"
@@ -54,8 +55,11 @@ def extrair_resumo_html(url):
             # Evita pegar links vazios ou parágrafos de créditos muito curtos
             if len(texto) > 60:
                 # Limita o tamanho do resumo
-                return texto[:300] + "..." if len(texto) > 300 else texto
+                resumo = texto[:300] + "..." if len(texto) > 300 else texto
+                soup.decompose()
+                return resumo
                 
+        soup.decompose()
     except Exception:
         return "Aviso: Não foi possível realizar o scraping automático deste conteúdo."
         
@@ -146,9 +150,14 @@ def gerar_relatorio(data_input):
                         "fonte": fonte["nome"]
                     })
                     count += 1
+                
+                soup.decompose()
                     
         except Exception as e:
             print(f"[!] Erro na fonte {fonte['nome']}: {e}")
+            
+        finally:
+            gc.collect()
 
     # 2. Avaliação e Classificação Semântica
     relatorio = {
