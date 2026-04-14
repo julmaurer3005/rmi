@@ -1,202 +1,242 @@
 [
-    {
-        "nome": "GZH",
-        "tipo": "rss",
-        "url": "https://gauchazh.clicrbs.com.br/rss"
-    },
-    {
-        "nome": "Rádio Progresso",
-        "tipo": "site",
-        "url": "https://radioprogresso.com.br/ultimas-noticias/"
-    },
-    {
-        "nome": "Rádio Sulbrasileira",
-        "tipo": "site",
-        "url": "https://sulbrasileira.radio.br/"
-    },
-    {
-        "nome": "Ibiruba",
-        "tipo": "site",
-        "url": "https://ibiruba.rs.gov.br/"
-    },
-    {
-        "nome": "Camvereadoresibiruba",
-        "tipo": "site",
-        "url": "https://www.camvereadoresibiruba.rs.gov.br/"
-    },
-    {
-        "nome": "Camaraquinze",
-        "tipo": "site",
-        "url": "https://www.camaraquinze.rs.gov.br/"
-    },
-    {
-        "nome": "Pmfv",
-        "tipo": "site",
-        "url": "https://pmfv.rs.gov.br/"
-    },
-    {
-        "nome": "Camarafv",
-        "tipo": "site",
-        "url": "https://www.camarafv.rs.gov.br/"
-    },
-    {
-        "nome": "Fredericowestphalen-Rs",
-        "tipo": "site",
-        "url": "https://www.fredericowestphalen-rs.com.br"
-    },
-    {
-        "nome": "Seberi",
-        "tipo": "site",
-        "url": "https://seberi.atende.net/cidadao/noticia"
-    },
-    {
-        "nome": "Palmitinho",
-        "tipo": "site",
-        "url": "https://palmitinho.atende.net/cidadao"
-    },
-    {
-        "nome": "Irai",
-        "tipo": "site",
-        "url": "https://www.irai.rs.gov.br/"
-    },
-    {
-        "nome": "Rodeiobonito",
-        "tipo": "site",
-        "url": "https://www.rodeiobonito.rs.gov.br/"
-    },
-    {
-        "nome": "Ametistadosul",
-        "tipo": "site",
-        "url": "https://ametistadosul.rs.gov.br/"
-    },
-    {
-        "nome": "Fredericowestphalen",
-        "tipo": "site",
-        "url": "https://www.fredericowestphalen.rs.leg.br/"
-    },
-    {
-        "nome": "Oaltouruguai",
-        "tipo": "site",
-        "url": "https://www.oaltouruguai.com.br"
-    },
-    {
-        "nome": "Jornalfrederiquense",
-        "tipo": "site",
-        "url": "https://www.jornalfrederiquense.com.br/"
-    },
-    {
-        "nome": "Barrilfm",
-        "tipo": "site",
-        "url": "http://barrilfm.com.br/"
-    },
-    {
-        "nome": "Lamais",
-        "tipo": "site",
-        "url": "https://lamais.com.br/"
-    },
-    {
-        "nome": "Fortalezafm",
-        "tipo": "site",
-        "url": "https://www.fortalezafm.radio.br/"
-    },
-    {
-        "nome": "Radioseberi",
-        "tipo": "site",
-        "url": "https://radioseberi.com.br"
-    },
-    {
-        "nome": "Grupochiru",
-        "tipo": "site",
-        "url": "https://www.grupochiru.com"
-    },
-    {
-        "nome": "Ijui",
-        "tipo": "site",
-        "url": "http://www.ijui.rs.gov.br/"
-    },
-    {
-        "nome": "Gruporeporter",
-        "tipo": "site",
-        "url": "https://gruporeporter.com.br/"
-    },
-    {
-        "nome": "Radioprogresso",
-        "tipo": "site",
-        "url": "https://radioprogresso.com.br/"
-    },
-    {
-        "nome": "Clicjm",
-        "tipo": "site",
-        "url": "https://clicjm.com/"
-    },
-    {
-        "nome": "Ajuricaba",
-        "tipo": "site",
-        "url": "http://www.ajuricaba.rs.gov.br/"
-    },
-    {
-        "nome": "Culturafmajuricaba",
-        "tipo": "site",
-        "url": "https://culturafmajuricaba.com/"
-    },
-    {
-        "nome": "Radioaguasclaras",
-        "tipo": "site",
-        "url": "https://www.radioaguasclaras.com.br/"
-    },
-    {
-        "nome": "Radioliberdadeap",
-        "tipo": "site",
-        "url": "https://www.radioliberdadeap.com.br/news"
-    },
-    {
-        "nome": "Tribunadaproducao",
-        "tipo": "site",
-        "url": "https://tribunadaproducao.com.br"
-    },
-    {
-        "nome": "Radiopalmeira",
-        "tipo": "site",
-        "url": "https://radiopalmeira.com.br"
-    },
-    {
-        "nome": "Tudoradio",
-        "tipo": "site",
-        "url": "https://tudoradio.com"
-    },
-    {
-        "nome": "ijuinews",
-        "tipo": "site",
-        "url": "https://ijuinews.com.br/"
-    },
-    {
-        "nome": "G1 RS",
-        "tipo": "rss",
-        "url": "https://g1.globo.com/dynamo/rs/rio-grande-do-sul/rss2.xml"
-    },
-    {
-        "nome": "G1 Brasil",
-        "tipo": "rss",
-        "url": "https://g1.globo.com/dynamo/brasil/rss2.xml"
-    },
-    {
-        "nome": "Folha de S.Paulo",
-        "tipo": "rss",
-        "url": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml"
-    },
-    {
-        "nome": "Google News - Bombeiros RS",
-        "tipo": "rss",
-        "url": "https://news.google.com/rss/search?q=bombeiros+RS&hl=pt-BR&gl=BR&ceid=BR:pt-419"
-    },
-    {
-        "nome": "Google News - Corpo de Bombeiros",
-        "tipo": "rss",
-        "url": "https://news.google.com/rss/search?q=%22Corpo+de+Bombeiros%22&hl=pt-BR&gl=BR&ceid=BR:pt-419"
-    },
-    {
-        "nome": "Prefeitura Ijui",
-        "tipo": "site",
-        "url": "https://www.ijui.rs.gov.br/noticia/categoria/"
-    }
+  {
+    "nome": "GZH",
+    "tipo": "rss",
+    "url": "https://gauchazh.clicrbs.com.br/rss"
+  },
+  {
+    "nome": "Rádio Progresso",
+    "tipo": "site",
+    "url": "https://radioprogresso.com.br/ultimas-noticias/"
+  },
+  {
+    "nome": "Rádio Sulbrasileira",
+    "tipo": "site",
+    "url": "https://sulbrasileira.radio.br/"
+  },
+  {
+    "nome": "Ibiruba",
+    "tipo": "site",
+    "url": "https://ibiruba.rs.gov.br/"
+  },
+  {
+    "nome": "Camvereadoresibiruba",
+    "tipo": "site",
+    "url": "https://www.camvereadoresibiruba.rs.gov.br/"
+  },
+  {
+    "nome": "Camaraquinze",
+    "tipo": "site",
+    "url": "https://www.camaraquinze.rs.gov.br/"
+  },
+  {
+    "nome": "Pmfv",
+    "tipo": "site",
+    "url": "https://pmfv.rs.gov.br/"
+  },
+  {
+    "nome": "Camarafv",
+    "tipo": "site",
+    "url": "https://www.camarafv.rs.gov.br/"
+  },
+  {
+    "nome": "Fredericowestphalen-Rs",
+    "tipo": "site",
+    "url": "https://www.fredericowestphalen-rs.com.br"
+  },
+  {
+    "nome": "Seberi",
+    "tipo": "site",
+    "url": "https://seberi.atende.net/cidadao/noticia"
+  },
+  {
+    "nome": "Palmitinho",
+    "tipo": "site",
+    "url": "https://palmitinho.atende.net/cidadao"
+  },
+  {
+    "nome": "Irai",
+    "tipo": "site",
+    "url": "https://www.irai.rs.gov.br/"
+  },
+  {
+    "nome": "Rodeiobonito",
+    "tipo": "site",
+    "url": "https://www.rodeiobonito.rs.gov.br/"
+  },
+  {
+    "nome": "Ametistadosul",
+    "tipo": "site",
+    "url": "https://ametistadosul.rs.gov.br/"
+  },
+  {
+    "nome": "Fredericowestphalen",
+    "tipo": "site",
+    "url": "https://www.fredericowestphalen.rs.leg.br/"
+  },
+  {
+    "nome": "Oaltouruguai",
+    "tipo": "site",
+    "url": "https://www.oaltouruguai.com.br"
+  },
+  {
+    "nome": "Jornalfrederiquense",
+    "tipo": "site",
+    "url": "https://www.jornalfrederiquense.com.br/"
+  },
+  {
+    "nome": "Barrilfm",
+    "tipo": "site",
+    "url": "http://barrilfm.com.br/"
+  },
+  {
+    "nome": "Lamais",
+    "tipo": "site",
+    "url": "https://lamais.com.br/"
+  },
+  {
+    "nome": "Fortalezafm",
+    "tipo": "site",
+    "url": "https://www.fortalezafm.radio.br/"
+  },
+  {
+    "nome": "Radioseberi",
+    "tipo": "site",
+    "url": "https://radioseberi.com.br"
+  },
+  {
+    "nome": "Grupochiru",
+    "tipo": "site",
+    "url": "https://www.grupochiru.com"
+  },
+  {
+    "nome": "Ijui",
+    "tipo": "site",
+    "url": "http://www.ijui.rs.gov.br/"
+  },
+  {
+    "nome": "Gruporeporter",
+    "tipo": "site",
+    "url": "https://gruporeporter.com.br/"
+  },
+  {
+    "nome": "Radioprogresso",
+    "tipo": "site",
+    "url": "https://radioprogresso.com.br/"
+  },
+  {
+    "nome": "Clicjm",
+    "tipo": "site",
+    "url": "https://clicjm.com/"
+  },
+  {
+    "nome": "Ajuricaba",
+    "tipo": "site",
+    "url": "http://www.ajuricaba.rs.gov.br/"
+  },
+  {
+    "nome": "Culturafmajuricaba",
+    "tipo": "site",
+    "url": "https://culturafmajuricaba.com/"
+  },
+  {
+    "nome": "Radioaguasclaras",
+    "tipo": "site",
+    "url": "https://www.radioaguasclaras.com.br/"
+  },
+  {
+    "nome": "Radioliberdadeap",
+    "tipo": "site",
+    "url": "https://www.radioliberdadeap.com.br/news"
+  },
+  {
+    "nome": "Tribunadaproducao",
+    "tipo": "site",
+    "url": "https://tribunadaproducao.com.br"
+  },
+  {
+    "nome": "Radiopalmeira",
+    "tipo": "site",
+    "url": "https://radiopalmeira.com.br"
+  },
+  {
+    "nome": "Tudoradio",
+    "tipo": "site",
+    "url": "https://tudoradio.com"
+  },
+  {
+    "nome": "ijuinews",
+    "tipo": "site",
+    "url": "https://ijuinews.com.br/"
+  },
+  {
+    "nome": "G1 RS",
+    "tipo": "rss",
+    "url": "https://g1.globo.com/dynamo/rs/rio-grande-do-sul/rss2.xml"
+  },
+  {
+    "nome": "G1 Brasil",
+    "tipo": "rss",
+    "url": "https://g1.globo.com/dynamo/brasil/rss2.xml"
+  },
+  {
+    "nome": "Folha de S.Paulo",
+    "tipo": "rss",
+    "url": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml"
+  },
+  {
+    "nome": "Google News - Bombeiros RS",
+    "tipo": "rss",
+    "url": "https://news.google.com/rss/search?q=bombeiros+RS&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+  },
+  {
+    "nome": "Google News - Corpo de Bombeiros",
+    "tipo": "rss",
+    "url": "https://news.google.com/rss/search?q=%22Corpo+de+Bombeiros%22&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+  },
+  {
+    "nome": "Prefeitura Ijui",
+    "tipo": "site",
+    "url": "https://www.ijui.rs.gov.br/noticia/categoria/"
+  },
+  {
+    "nome": "PBI",
+    "tipo": "site",
+    "url": "https://panambi.atende.net/"
+  },
+  {
+    "nome": "CAMARA PBI",
+    "tipo": "site",
+    "url": "https://www.camarapanambi.rs.gov.br/"
+  },
+  {
+    "nome": "SBS",
+    "tipo": "site",
+    "url": " https://www.santabarbaradosul.rs.gov.br/site"
+  },
+  {
+    "nome": "SBS2",
+    "tipo": "site",
+    "url": " https://www.cmsantabarbaradosul.rs.gov.br/site"
+  },
+  {
+    "nome": "CONDOR",
+    "tipo": "site",
+    "url": "https://www.condor.rs.gov.br/"
+  },
+  {
+    "nome": "CONDOR2",
+    "tipo": "site",
+    "url": "https://www.camaracondor.rs.gov.br/"
+  },
+  {
+    "nome": "PEJU",
+    "tipo": "site",
+    "url": "https://www.pejucara.rs.gov.br/"
+  },
+  {
+    "nome": "PEJU2",
+    "tipo": "site",
+    "url": "https://www.camarapejucara.rs.gov.br"
+  }
 ]
