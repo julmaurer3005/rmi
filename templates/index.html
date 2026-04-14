@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Inteligência</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <span class="logo-icon"></span>
+            <h1>INTEL. MON</h1>
+        </div>
+        <nav>
+            <a href="#" class="nav-item active" id="nav-relatorio">Gerar Relatório</a>
+            <a href="#" class="nav-item" id="nav-fontes">Gerenciar Fontes</a>
+        </nav>
+    </div>
+
+    <main class="content">
+        <section id="section-relatorio" class="panel active-panel">
+            <h2>Gerar Relatório Resumo</h2>
+            <p>Selecione uma data para realizar a extração e cruzamento de informações nas fontes configuradas.</p>
+            
+            <div class="card glass-card">
+                <div class="input-group">
+                    <label for="data-input">Data do Relatório</label>
+                    <input type="text" id="data-input" placeholder="Ex: 10/04/2026" autocomplete="off">
+                </div>
+                <button id="btn-gerar" class="btn primary-btn">Extrair Notícias</button>
+            </div>
+
+            <div id="loading-area" class="hidden">
+                <div class="spinner"></div>
+                <p>Analisando fontes e extraindo resumos... Isso pode levar um minuto.</p>
+            </div>
+
+            <div id="result-area" class="hidden glass-card success-card">
+                <h3 id="result-message">Sucesso!</h3>
+                <a href="#" id="download-link" class="btn download-btn" download>Baixar Arquivo .docx</a>
+            </div>
+        </section>
+
+        <section id="section-fontes" class="panel">
+            <h2>Fontes de Pesquisa</h2>
+            <p>Adicione, remova ou edite os RSS e Sites monitorados.</p>
+            
+            <div class="card glass-card">
+                <table class="fontes-table">
+                    <thead>
+                        <tr>
+                            <th>Nome da Fonte</th>
+                            <th>Tipo (rss/site)</th>
+                            <th>URL</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fontes-tbody">
+                        <!-- Povoado por JS -->
+                    </tbody>
+                </table>
+                <button id="btn-add-fonte" class="btn outline-btn">+ Adicionar Nova Fonte</button>
+                <div class="actions-footer">
+                    <button id="btn-salvar-fontes" class="btn primary-btn">Salvar Alterações</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
